@@ -1,3 +1,5 @@
+### This is a fork of https://github.com/dealfonso/sapp some changes were made so that the signed PDF is validated at https://validar.iti.gov.br/ (Brazilian Government document signature validation service).
+
 # SAPP - Simple and Agnostic PDF Document Parser
 
 SAPP stands for Simple and Agnostic PDF Parser and it makes what is name says: parsing PDF files. It also enables other cool features such as rebuilding documents (to make the content more clear or compact) or digitally signing documents.
