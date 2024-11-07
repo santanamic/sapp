@@ -473,12 +473,12 @@ class CMS {
             '06092A864886F70D010903'. //OBJ_pkcs9_contentType 1.2.840.113549.1.9.3
             asn1::set('06092A864886F70D010701')  //OBJ_pkcs7_data 1.2.840.113549.1.7.1
         ).
-        asn1::seq( // signing time
-            '06092A864886F70D010905'. //OBJ_pkcs9_signingTime 1.2.840.113549.1.9.5
-            asn1::set(
-                asn1::utime(date("ymdHis")) //UTTC Time
-            )
-        ).
+        //asn1::seq( // signing time
+            //'06092A864886F70D010905'. //OBJ_pkcs9_signingTime 1.2.840.113549.1.9.5
+            //asn1::set(
+                //asn1::utime(date("ymdHis")) //UTTC Time
+            //)
+        //).
         asn1::seq( // messageDigest
             '06092A864886F70D010904'. //OBJ_pkcs9_messageDigest 1.2.840.113549.1.9.4
             asn1::set(asn1::oct($messageDigest))
